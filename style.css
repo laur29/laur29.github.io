@@ -1,1 +1,24 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Helvetica;
+}
 
+.header {
+    height: 6.5vh;
+    background-color: #E7ECEF;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header a {
+    color: #274c77;
+    text-decoration: none;
+    padding: 5px;
+}
+
+#main {
+    font-weight: bolder;
+}
