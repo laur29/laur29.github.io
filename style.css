@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     font-family: Helvetica;
+    scroll-behavior: smooth;
 }
 
 .header {
@@ -11,14 +12,44 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    width: 100vw;
 }
 
 .header a {
     color: #274c77;
     text-decoration: none;
-    padding: 5px;
+    padding: 10px;
+    font-size: 111%;
+    font-weight: 700;
 }
 
 #main {
-    font-weight: bolder;
+    color: #6096ba;
+}
+
+#home {
+    background-color: #F6F8F9;
+    min-height: 100vh;
+    padding-top: 6.5vh;
+}
+
+#about {
+    background-color: #E7ECEF;
+    min-height: 100vh;
+}
+
+#work {
+    background-color: #F6F8F9;
+    min-height: 100vh;
+}
+
+#contact {
+    background-color: #6096ba;
+    min-height: 30vh;
+}
+
+#footer {
+    background-color: #274c77;
+    min-height: 15vh;
 }
