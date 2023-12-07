@@ -3,6 +3,7 @@
     <head> 
       <title>Lauren Lee Portfolio</title>
       <link rel="stylesheet" type="text/css" href="./style.css">
+      <script src="script.js"></script> 
     </head>
     <body>
       <!-- nav bar -->
@@ -10,6 +11,7 @@
         <a href="#about">About Me</a>
         <a id="main" href="#home">Home</a>
         <a href="#work">My Work</a>
+        <button class="contactForm" onclick="openContact()">Contact Me</button>
       </nav>
       <div id="home">
         <h1>Home</h1>
@@ -18,7 +20,10 @@
           aliqua. Malesuada fames ac turpis egestas maecenas pharetra 
           convallis posuere. Velit aliquet sagittis id consectetur. 
           Dictum sit amet justo donec enim diam.</p>
-          <a href="/images/sunset.jpg">Download Resume</a>
+          <ul>
+            <li><a href="#contact">Contact Me</a></li>
+            <li><a href="/images/sunset.jpg">Download Resume</a></li>
+          </ul>
       </div>
       <div id="about">
         <h1>About Me</h1>
@@ -41,7 +46,22 @@
         <h3>Contact Me</h3>
       </div>
       <div id="footer">
-        <h1>foota</h1>
+        <h2>foota</h2>
+      </div>
+      <!--contact form-->
+      <div class="contact-popup" id="contactMe">
+        <form class="form-container">
+          <h1>Contact Me!</h1>
+      
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required>
+      
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+      
+          <button type="submit" class="btn">Login</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
       </div>
     </body>
 </html>
